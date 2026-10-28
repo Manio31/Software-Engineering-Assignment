@@ -1,67 +1,183 @@
-# Task 3: Authentication and Authorization in a Flask API
+# Software Engineering Assignment 1
 
-## Project Overview
-This project implements an Employee Management API using Python and Flask. It provides authentication through login credentials and role-based authorization to protect employee records.
+A collection of three practical Software Engineering tasks developed using Python and Flask. This repository demonstrates REST API development, API key authentication, database integration, and role-based access control.
 
-## Features
-- User login with valid credentials.
-- Token-based authentication for protected endpoints.
-- Two roles: Employee and Administrator.
-- Employees can view employee records.
-- Administrators can view, add, update, and delete employee records.
-- Unauthenticated requests are rejected.
-- Employees cannot perform administrator-only operations.
+## 📌 Project Overview
 
-## Demo Credentials
+This assignment consists of three tasks:
 
-| Role | Username | Password |
-|---|---|---|
-| Employee | employee1 | emp123 |
-| Administrator | admin | admin123 |
+1. **Task 1: Student Management Database API**
+2. **Task 2: API Key Authentication**
+3. **Task 3: Authentication and Authorization API**
 
-These credentials are for assignment demonstration only.
+Each task is organized in a separate folder with its source code and relevant documentation.
 
-## API Endpoints
+## 🛠️ Technologies Used
 
-| Method | Endpoint | Permission |
-|---|---|---|
-| POST | `/login` | Public |
-| GET | `/employees` | Employee, Administrator |
-| POST | `/employees` | Administrator |
-| PUT | `/employees/<employee_id>` | Administrator |
-| DELETE | `/employees/<employee_id>` | Administrator |
-
-## How to Run
-
-1. Install Python and Flask.
-2. Open the project folder in VS Code.
-3. Run `python -m pip install flask`.
-4. Start the API using `python app.py`.
-5. The API runs locally at `http://127.0.0.1:5000`.
-
-## Testing
-
-Use cURL or PowerShell to test the endpoints.
-
-- `200 OK`: Request successful.
-- `201 Created`: Employee added successfully.
-- `400 Bad Request`: Invalid request data.
-- `401 Unauthorized`: Missing or invalid authentication credentials.
-- `403 Forbidden`: Authenticated user lacks permission.
-- `404 Not Found`: Employee record does not exist.
-
-## Authentication vs Authorization
-
-Authentication verifies the user's identity using login credentials and a token. Authorization checks the authenticated user's role before allowing access to restricted operations.
-
-An Employee can view records but receives `403 Forbidden` when attempting administrator-only operations. A request without a valid token receives `401 Unauthorized`.
-
-## Technologies Used
 - Python
 - Flask
-- REST API
+- SQLite
+- Streamlit
+- REST APIs
 - JSON
-- PowerShell / cURL
+- PowerShell
+- Git and GitHub
 
-## Note
-This is an educational demonstration. Users, tokens, and employee records are stored in memory and reset when the server restarts. A production system should use persistent storage, securely hashed passwords, token expiration, and appropriate secret management.
+## 📂 Repository Structure
+
+```text
+Software-Engineering-Assignment-1/
+│
+├── Task_1_Database_API_StreamLit/
+│   ├── app.py
+│   ├── streamlit_app.py
+│   ├── README.md
+│   └── students.db
+│
+├── Task_2_API_Key_Authentication/
+│   ├── app.py
+│   └── README.md
+│
+├── Task_3_Authentication_Authorization_API/
+│   ├── app.py
+│   └── README.md
+│
+├── .gitignore
+└── README.md
+```
+
+*Note: The filenames shown above are examples. The actual structure may differ slightly depending on the files in each task folder.*
+
+---
+
+## 🚀 Task 1: Student Management Database API
+
+**Objective:** Develop a Flask API connected to an SQLite database and a Streamlit interface for managing student records.
+
+### Key Features
+
+- Retrieve student records through a REST API.
+- Store and manage data using SQLite.
+- Perform student record operations.
+- Provide a user-friendly interface using Streamlit.
+
+**Technologies:** Python, Flask, SQLite, Streamlit.
+
+### 🎥 Demo Video
+
+**Demo Video:** [Add Task 1 Demo Video Link Here] https://youtu.be/a8-3bCTTTiI?si=N-yqxRYcqj9cT98o
+
+---
+
+## 🔐 Task 2: API Key Authentication
+
+**Objective:** Implement API key-based authentication to protect an API endpoint from unauthorized access.
+
+### Key Features
+
+- Generate and use an API key.
+- Validate API keys in incoming requests.
+- Allow authorized requests.
+- Reject requests with missing or invalid API keys.
+
+**Technologies:** Python, Flask, REST API, HTTP headers.
+
+### 🎥 Demo Video
+
+**Demo Video:** [Add Task 2 Demo Video Link Here] https://youtu.be/3YzAyzM2fOM?si=EWswGnbHN8hXupJm
+
+---
+
+## 🛡️ Task 3: Authentication and Authorization API
+
+**Objective:** Develop an employee management API that uses login tokens for authentication and role-based permissions for authorization.
+
+### Key Features
+
+- User login and token generation.
+- Bearer token authentication.
+- Employee and Administrator roles.
+- View, add, update, and delete employee records.
+- HTTP 401 response for unauthenticated requests.
+- HTTP 403 response for unauthorized operations.
+
+**Technologies:** Python, Flask, REST API, JSON, PowerShell.
+
+### 🎥 Demo Video
+
+**Demo Video:** 
+[Add Task 3 Demo Video Link Here] https://youtu.be/eL9waQmy7fA
+---
+
+## ▶️ How to Run the Projects
+
+### 1. Clone the Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd Software-Engineering-Assignment-1
+```
+
+Replace `YOUR_GITHUB_REPOSITORY_URL` with your actual GitHub repository URL.
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Activate it in Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+### 3. Install Dependencies
+
+Install the required packages for the specific task. For example:
+
+```bash
+pip install flask streamlit
+```
+
+Install any additional dependencies required by the individual task.
+
+### 4. Run the API
+
+Open the relevant task folder and run:
+
+```bash
+python app.py
+```
+
+For Task 1, if the Streamlit interface is required, open another terminal and run:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Refer to each task's folder for any task-specific setup instructions.
+
+---
+
+## 📚 Learning Outcomes
+
+Through these tasks, I practiced:
+
+- Designing and testing REST APIs.
+- Integrating Flask applications with databases.
+- Implementing API key authentication.
+- Working with login tokens and role-based authorization.
+- Testing API endpoints using PowerShell.
+- Organizing projects and documenting code with GitHub.
+
+## 👨‍💻 Author
+
+**Abdul Mannio Hulio**
+**BS Computer Science** 
+**Undergraduate**
+
+Software Engineering Assignment 1
+
+## 📄 Disclaimer
+These projects were developed for educational and demonstration purposes. Security-sensitive implementations should be strengthened before production use.
