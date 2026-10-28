@@ -65,8 +65,7 @@ Software-Engineering-Assignment-1/
 
 ### 🎥 Demo Video
 
-**Demo Video:** [Add Task 1 Demo Video Link Here] https://youtu.be/a8-3bCTTTiI?si=N-yqxRYcqj9cT98o
-
+**Demo Video:** [Add Task 1 Demo Video Link Here] https://youtu.be/a8-3bCTTTiI?si=SymdT_eHi_sNB6UG
 ---
 
 ## 🔐 Task 2: API Key Authentication
@@ -84,7 +83,7 @@ Software-Engineering-Assignment-1/
 
 ### 🎥 Demo Video
 
-**Demo Video:** [Add Task 2 Demo Video Link Here] https://youtu.be/3YzAyzM2fOM?si=EWswGnbHN8hXupJm
+**Demo Video:** [Add Task 2 Demo Video Link Here] (https://youtu.be/eL9waQmy7fA)
 
 ---
 
@@ -106,7 +105,7 @@ Software-Engineering-Assignment-1/
 ### 🎥 Demo Video
 
 **Demo Video:** 
-[Add Task 3 Demo Video Link Here] https://youtu.be/eL9waQmy7fA
+[Add Task 3 Demo Video Link Here] https://youtu.be/3YzAyzM2fOM?si=4Kinhpmi1JCKT9oC
 ---
 
 ## ▶️ How to Run the Projects
